@@ -1,5 +1,5 @@
 /**
- * functionKeyCompat — 솔루션 버전마다 다른 펑션키(F8·F9 등) 배치를 고객사 기준으로 맞추는 플러그인.
+ * functionKeySwap — 솔루션 버전마다 다른 펑션키(F8·F9 등) 배치를 고객사 기준으로 맞바꾸는 플러그인.
  *
  * 예) 솔루션 A: F8 디버그 / F9 테스트,  솔루션 B: F8 조회 / F9 디버그
  *     → B 고객사 config에 { F8: 'F9', F9: 'F8' } 를 주면 F8 이 디버그로 동작.
@@ -13,7 +13,7 @@
  */
 
 const config = {
-    name: 'functionKeyCompat'
+    name: 'functionKeySwap'
 };
 
 // 'F1'~'F12' 이름 ↔ 키 코드 (112~123). 숫자 키 코드로 적어도 됨

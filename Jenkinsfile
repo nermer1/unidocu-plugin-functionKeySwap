@@ -4,7 +4,7 @@ pipeline {
     agent {
         node {
             label ''
-            customWorkspace '/var/jenkins_home/fast_workspace/plugin-functionKeyCompat'
+            customWorkspace '/var/jenkins_home/fast_workspace/plugin-functionKeySwap'
         }
     }
 
@@ -21,7 +21,7 @@ pipeline {
     }
 
     environment {
-        PLUGIN_ID = 'functionKeyCompat'      // 설치 경로/파일명 기준 (어댑터 등록명)
+        PLUGIN_ID = 'functionKeySwap'      // 설치 경로/파일명 기준 (어댑터 등록명)
         NAS_DIR   = '/upload/plugins'      // Jenkins 컨테이너에 마운트된 NAS 경로
     }
 

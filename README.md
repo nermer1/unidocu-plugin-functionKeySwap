@@ -1,4 +1,4 @@
-# functionKeyCompat
+# functionKeySwap
 
 솔루션 버전마다 다른 펑션키(F8·F9 등) 배치를 고객사 기준으로 맞추는 unidocu 플러그인.
 
@@ -12,7 +12,7 @@
 ## 설정
 
 ```js
-{ name: 'functionKeyCompat', options: { map: { F8: 'F9', F9: 'F8' } } }
+{ name: 'functionKeySwap', options: { map: { F8: 'F9', F9: 'F8' } } }
 ```
 
 - `map`: `{원래 키: 바꿀 키}`. `F1`~`F12` 이름이나 키 코드 숫자로 적는다.
@@ -35,4 +35,4 @@ npm ci
 npm run build   # webpack → dist/plugin.js (UMD)
 ```
 
-Jenkins(`Jenkinsfile`): 자동 빌드 없음. 태그 `v<버전>` push 후 Build with Parameters `GIT_REF=v<버전>` → NAS `<plugins>/functionKeyCompat/<version>/plugin.js`.
+Jenkins(`Jenkinsfile`): 자동 빌드 없음. 태그 `v<버전>` push 후 Build with Parameters `GIT_REF=v<버전>` → NAS `<plugins>/functionKeySwap/<version>/plugin.js`.
